@@ -1,0 +1,127 @@
+
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: Cabin Sketch;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #f0fff0;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  border: 1px solid #deb887;
+}
+
+.split.top-left {
+  left: 0;
+  top: 0;
+  background-color: #f7dcb4
+}
+
+.split.top-right {
+  right: 0;
+  top: 0;
+  background-color: #fbceb1;
+}
+
+.split.bottom-left {
+  bottom: 0;
+  background-color: #dea175;
+}
+
+.split.bottom-right {
+  bottom: 0;
+  right: 0;
+  background-color: #f4ae72;
+}
+
+.split.top-left::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 34, 34, 0.3);
+}
+
+.split.top-right::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 34, 34, 0.3);
+}
+
+.split.bottom-left::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 92, 92,0.5);
+}
+
+.split.bottom-right::before {
+  content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 92, 92,0.5);
+}
+
+h1 {
+  font-size: 50px;
+  color: #7a3803;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+   transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 80%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fffff0;
+  border: 2px solid #fffff0;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 300px;
+  padding: 10px;
+}
+
+.split.top-left .button:hover {
+  background-color: rgba(178, 34, 34, 1);
+}
+
+.split.top-right .button:hover {
+  background-color: rgba(178, 34, 34, 1);
+}
+
+.split.bottom-right .button:hover {
+  background-color: rgba(178, 34, 34, 1);
+}
+
+.split.bottom-left .button:hover {
+  background-color: rgba(178, 34, 34, 1);
+}
+
+
